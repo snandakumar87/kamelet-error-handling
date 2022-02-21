@@ -7,11 +7,6 @@ metadata:
   name: amqp-to-kafka
   namespace: kamelet-error-handling
 spec:
-  errorHandler:
-    log:
-      parameters:
-        maximumRedeliveries: 3
-        redeliveryDelay: 2000
   sink:
     properties:
       url: 'https://dummy-url/rest'
